@@ -178,6 +178,9 @@
         <h1>슈퍼센트가 제작한</h1>
         <h1>다양하고 새로운</h1>
         <h1>게임을 만나보세요</h1>
+        <h1>인텔리원이 개발한</h1>
+        <h1>다양한 게임을</h1>
+        <h1>만나보세요</h1>
         <p>슈퍼 콘텐츠를 기반으로 하이퍼 캐주얼 게임을 만들고 퍼블리싱합니다.</p>
         <a href="#" class="cta-button">게임 제작하기 →</a>
     </section>
@@ -218,6 +221,7 @@
                 career: '경력',
                 news: '소식',
                 heroTitle: '슈퍼센트가 제작한\n다양하고 새로운\n게임을 만나보세요',
+                heroTitle: '인텔리원이 개발한\n다양한 게임을\n만나보세요',
                 heroSubtitle: '슈퍼 콘텐츠를 기반으로 하이퍼 캐주얼 게임을 만들고 퍼블리싱합니다.',
                 ctaButton: '게임 제작하기 →'
             },
@@ -227,6 +231,7 @@
                 career: 'Career',
                 news: 'News',
                 heroTitle: 'Discover Various and New Games\nCreated by Supercent',
+                heroTitle: 'Discover Various Games\nDeveloped by IntelliOne',
                 heroSubtitle: 'We create and publish hyper-casual games based on super content.',
                 ctaButton: 'Create Game →'
             }
@@ -244,10 +249,16 @@
                 heroTitles[0].textContent = '슈퍼센트가 제작한';
                 heroTitles[1].textContent = '다양하고 새로운';
                 heroTitles[2].textContent = '게임을 만나보세요';
+                heroTitles[0].textContent = '인텔리원이 개발한';
+                heroTitles[1].textContent = '다양한 게임을';
+                heroTitles[2].textContent = '만나보세요';
             } else {
                 heroTitles[0].textContent = 'Discover Various and New';
                 heroTitles[1].textContent = 'Games Created by';
                 heroTitles[2].textContent = 'Supercent';
+                heroTitles[0].textContent = 'Discover Various Games';
+                heroTitles[1].textContent = 'Developed by';
+                heroTitles[2].textContent = 'IntelliOne';
             }
 
             document.querySelector('.games-hero p').textContent = translations[lang].heroSubtitle;
