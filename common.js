@@ -21,10 +21,12 @@ const translations = {
                 heroTitle: '세상을 즐겁게 하다'
             },
             games: {
-                heroTitle1: '인텔리원스튜디오가 개발한',
-                heroTitle2: '다양한 게임을 만나보세요',
-                gameTitle1: '외워라 창고',
-                gameTitle2: '농부의 꿈'
+                heroTitle1: "인텔리원스튜디오가 개발한",
+                heroTitle2: "다양한 게임을 만나보세요",
+                gameTitle1: "Ghost Lights Puzzle",
+                gameTitle2: "Exit Queue",
+                gameTitle3: "외워라 창고",
+                gameTitle4: "농부의 꿈"
             },
             about: {
                 storyHeading: '우리의 이야기',
@@ -96,8 +98,10 @@ const translations = {
             games: {
                 heroTitle1: 'Games Developed by IntelliOne Studio',
                 heroTitle2: 'Discover Our Various Games',
-                gameTitle1: 'Memory Warehouse',
-                gameTitle2: 'Farmers Dream'
+                gameTitle1: 'Ghost Lights Puzzle',
+                gameTitle2: 'Exit queue',
+                gameTitle3: 'Memory Warehouse',
+                gameTitle4: 'Farmers Dream'
             },
             about: {
                 storyHeading: 'Our Story',
@@ -323,9 +327,11 @@ function changeLanguage(lang) {
                 heroTitles[1].textContent = pageTranslations.heroTitle2;
             }
             const gameTitles = document.querySelectorAll('.game-title');
-            if (gameTitles.length >= 2) {
+            if (gameTitles.length >= 4) {
                 gameTitles[0].textContent = pageTranslations.gameTitle1;
                 gameTitles[1].textContent = pageTranslations.gameTitle2;
+                gameTitles[2].textContent = pageTranslations.gameTitle3;
+                gameTitles[3].textContent = pageTranslations.gameTitle4;
             }
         }
     }
